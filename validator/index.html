@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validator</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script src="js/validator.js"></script>
+	<style>
+	.emailErr{
+		font-size   : 8pt;
+		color 		: red;
+	}
+	</style>
+</head>
+<body>
+
+	<form action="process.php" method="get">
+		<table>
+			<tr>
+				<td>Email</td>
+				<td>
+					<input type="text" name="email" id="email" placeholder="Enter your email address"/>
+					<br>
+					<span class="emailErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="auth" id="auth" placeholder="Enter password"/></td>
+			</tr>
+			<tr>
+				<td>Zip Code</td>
+				<td>
+					<input type="text" name="zip" id="zip" placeholder="ex 12345" maxlength="5">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" value="Submit" id="formBtn">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
